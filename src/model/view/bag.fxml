@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="520.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.controller.BottleController">
+   <children>
+      <ImageView fitHeight="227.0" fitWidth="204.0" layoutX="286.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bag.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dangerLabel" layoutX="48.0" layoutY="41.0" text="Possible danger" textFill="#a2d55b">
+         <font>
+            <Font name="Georgia" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="recyclingLabel" layoutX="48.0" layoutY="224.0" text="Recycling" textFill="#a2d55b">
+         <font>
+            <Font name="Georgia" size="36.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="dangerTextArea" focusColor="#061220" layoutX="48.0" layoutY="103.0" prefHeight="107.0" prefWidth="426.0" text="Plastic bags do not decompose&#10;When burning them, carbon monoxide and harmful carcinogens are released" unFocusColor="#a2d55b">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea fx:id="recyclingTextArea" focusColor="#061220" layoutX="48.0" layoutY="278.0" prefHeight="140.0" prefWidth="243.0" text="Transfer of waste to granulate&#10;Pyrolytic (thermal) decomposition&#10;" unFocusColor="#a2d55b">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
