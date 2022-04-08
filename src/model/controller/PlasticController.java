@@ -12,6 +12,8 @@ import javafx.stage.StageStyle;
 
 import java.io.File;
 import java.net.URL;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class PlasticController {
 
@@ -33,6 +35,7 @@ public class PlasticController {
         loadPage(700, 600, "src/model/view/main", "Menu");
         Stage stage = (Stage) exitButton.getScene().getWindow();
         stage.close();
+
     }
 
     @FXML
@@ -66,11 +69,14 @@ public class PlasticController {
     }
 
     private void loadPage (double height, double width, String page, String setTitle){
+        Locale locale = new Locale("en", "EN");
+        ResourceBundle bundle = ResourceBundle.getBundle("bundle.text", locale);
+
         Parent root = null;
 
         try {
             URL url = new File(page + ".fxml").toURI().toURL();
-            root = FXMLLoader.load(url);
+            root = FXMLLoader.load(url, bundle);
             Stage registerStage = new Stage();
             registerStage.setTitle(setTitle);
             registerStage.initStyle(StageStyle.DECORATED);

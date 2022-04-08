@@ -12,6 +12,8 @@ import javafx.stage.StageStyle;
 
 import java.io.File;
 import java.net.URL;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class PaperController {
 
@@ -30,7 +32,7 @@ public class PaperController {
     @FXML
     void exitButtonOAction(ActionEvent event) {
 
-        loadPage(700, 600, "src/model/view/main", "Menu");
+        loadPage(700, 600, "../model/view/main", "Menu");
         Stage stage = (Stage) exitButton.getScene().getWindow();
         stage.close();
     }
@@ -46,11 +48,14 @@ public class PaperController {
     }
 
     private void loadPage (double height, double width, String page, String setTitle){
+        Locale locale = new Locale("en", "EN");
+        ResourceBundle bundle = ResourceBundle.getBundle("bundle.text", locale);
+
         Parent root = null;
 
         try {
             URL url = new File(page + ".fxml").toURI().toURL();
-            root = FXMLLoader.load(url);
+            root = FXMLLoader.load(url, bundle);
             Stage registerStage = new Stage();
             registerStage.setTitle(setTitle);
             registerStage.initStyle(StageStyle.DECORATED);

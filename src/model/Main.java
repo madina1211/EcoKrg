@@ -14,12 +14,13 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("../model/view/main.fxml"));
+        Locale locale = new Locale("en", "EN");
+        ResourceBundle bundle = ResourceBundle.getBundle("bundle.text", locale);
+        Parent root = FXMLLoader.load(getClass().getResource("../model/view/main.fxml"), bundle);
         primaryStage.setTitle("Menu");
         primaryStage.setScene(new Scene(root, 700, 600));
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);
