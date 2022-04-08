@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="520.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.controller.BottleController">
+   <children>
+      <ImageView fitHeight="140.0" fitWidth="129.0" layoutX="357.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dish.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dangerLabel" layoutX="48.0" layoutY="41.0" text="Possible danger" textFill="#a2d55b">
+         <font>
+            <Font name="Georgia" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="recyclingLabel" layoutX="48.0" layoutY="208.0" text="Recycling" textFill="#a2d55b">
+         <font>
+            <Font name="Georgia" size="36.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="dangerTextArea" focusColor="#061220" layoutX="47.0" layoutY="102.0" prefHeight="88.0" prefWidth="426.0" text="When heated, plastic dishes emit poisons and carcinogens" unFocusColor="#a2d55b">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea fx:id="recyclingTextArea" focusColor="#061220" layoutX="48.0" layoutY="265.0" prefHeight="182.0" prefWidth="286.0" text="These types of plastic are recycled – which means they can be safely handed over to recycling collection points or thrown into special containers in your city." unFocusColor="#a2d55b">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

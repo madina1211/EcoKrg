@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.controller.PlasticInfoController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+         <left>
+            <VBox fx:id="vbox" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #061220;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="bottleButton" mnemonicParsing="false" onAction="#bottleButtonOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #ffffff; -fx-border-color: #061220; -fx-border-width: 0px 2px 2px 0px; -fx-border-radius: 5px;" text="Bottle" textFill="#061220">
+                     <font>
+                        <Font name="Bodoni MT Black" size="16.0" />
+                     </font>
+
+                  </Button>
+                  <Button fx:id="plasticBagButton" mnemonicParsing="false" onAction="#plasticBagButtonOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #ffffff; -fx-border-color: #061220; -fx-border-width: 0px 2px 2px 0px; -fx-border-radius: 5px;" text="Plastic bag" textFill="#061220">
+                     <font>
+                        <Font name="Bodoni MT Black" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="plasticDishButton" mnemonicParsing="false" onAction="#plasticDishButtonOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #ffffff; -fx-border-color: #061220; -fx-border-width: 0px 2px 2px 0px; -fx-border-radius: 5px;" text="Plastic dish" textFill="#061220">
+                     <font>
+                        <Font name="Bodoni MT Black" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="520.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

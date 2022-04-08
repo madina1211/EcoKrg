@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.controller.MainController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="700.0" style="-fx-background-color: #061220;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="batteryButton1" fitHeight="135.0" fitWidth="147.0" layoutX="293.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">  
+               <image>
+                  <Image url="@../images/ecolife.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="570.0" layoutY="25.0" prefHeight="44.0" prefWidth="103.0" ripplerFill="#a2d55b" style="-fx-background-color: #a2d55b; -fx-background-radius: 25;" text="%game" textFill="#061220">
+               <font>
+                  <Font name="Georgia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="570.0" layoutY="80.0" prefHeight="44.0" prefWidth="103.0" ripplerFill="#a2d55b" style="-fx-background-color: #a2d55b; -fx-background-radius: 25;" text="%contacts" textFill="#061220">
+               <font>
+                  <Font name="Georgia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="570.0" layoutY="134.0" prefHeight="44.0" prefWidth="103.0" ripplerFill="#a2d55b" style="-fx-background-color: #a2d55b; -fx-background-radius: 25;" text="%about_us" textFill="#061220">
+               <font>
+                  <Font name="Georgia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="120.0" fitWidth="170.0" layoutX="293.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="kzButton" layoutX="33.0" layoutY="32.0" onAction="#kzButtonOnAction" prefHeight="44.0" prefWidth="103.0" ripplerFill="#a2d55b" style="-fx-background-color: #a2d55b; -fx-background-radius: 25;" text="KZ" textFill="#061220">
+               <font>
+                  <Font name="Georgia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="enButton" layoutX="33.0" layoutY="87.0" onAction="#enButtonOnAction" prefHeight="44.0" prefWidth="103.0" ripplerFill="#a2d55b" style="-fx-background-color: #a2d55b; -fx-background-radius: 25;" text="EN" textFill="#061220">
+               <font>
+                  <Font name="Georgia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ruButton" layoutX="33.0" layoutY="141.0" onAction="#ruButtonOnAction" prefHeight="44.0" prefWidth="103.0" ripplerFill="#a2d55b" style="-fx-background-color: #a2d55b; -fx-background-radius: 25;" text="RU" textFill="#061220">
+               <font>
+                  <Font name="Georgia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="batteryButton" fitHeight="223.0" fitWidth="176.0" layoutX="73.0" layoutY="87.0" onMouseClicked="#batteryButtonOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/metalgarbage.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="paperButton" fitHeight="223.0" fitWidth="176.0" layoutX="277.0" layoutY="87.0" onMouseClicked="#paperButtonOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/papergarbage.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="plasticButton" fitHeight="223.0" fitWidth="176.0" layoutX="492.0" layoutY="87.0" onMouseClicked="#plasticButtonOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/plasticgarbage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
